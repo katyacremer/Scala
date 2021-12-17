@@ -1,0 +1,11 @@
+GET
+curl http://localhost:8080/users
+curl http://localhost:8080/users/MrX
+
+POST 
+curl http://localhost:8080/users -H "Content-type: application/json" -X POST -d"{\"name\": \"MrX\", \"age\": 31, \"countryOfResidence\": \"Canada\"}"
+curl http://localhost:8080/users -H "Content-type: application/json" -X POST -d"{\"name\": \"MrY\", \"age\": 24, \"countryOfResidence\": \"Ausralia\"}"
+curl http://localhost:8080/users -H "Content-type: application/json" -X POST -d"{\"name\": \"MrZ\", \"age\": 28, \"countryOfResidence\": \"England\"}"
+
+DELETE
+curl http://localhost:8080/users/MrX -X DELETE
